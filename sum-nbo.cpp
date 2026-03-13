@@ -22,10 +22,10 @@ int main(int argc, char* argv[]){
 		fclose(fp);
 	}
 	for(int i=1;i<argc;i++){
-		printf("%d(%08x)", nums[i], nums[i]);
+		printf("%d(0x%08x)", nums[i], nums[i]);
 		if(i<argc-1) printf(" + ");
 	}
-	printf(" = %d(%08x)\n", sum_nbo, sum_nbo);
+	printf(" = %d(0x%08x)\n", sum_nbo, sum_nbo);
 
 	return 0;
 }
